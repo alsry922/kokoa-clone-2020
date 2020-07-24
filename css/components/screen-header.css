@@ -1,4 +1,5 @@
 .screen-header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,4 +14,14 @@
 
 .screen-header__icons span {
   margin-left: 25px;
+}
+
+.screen-header__icons__updated {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: tomato;
+  position: absolute;
+  top: 23px;
+  right: 18px;
 }
