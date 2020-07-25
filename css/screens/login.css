@@ -31,7 +31,7 @@
 }
 
 #login-form input::placeholder {
-  color: var(--gray-font);
+  color: var(--main-gray-font);
 }
 
 #login-form input:not([type="submit"]) {
