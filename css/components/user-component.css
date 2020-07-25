@@ -1,8 +1,8 @@
-.user-componenet {
+.user-component {
   justify-content: space-between;
 }
 
-.user-componenet,
+.user-component,
 .user-component__column:first-child {
   display: flex;
   align-items: center;
@@ -26,7 +26,11 @@
   font-size: 17px;
 }
 
-.user-component__avatar--xl {
+.user-component__text i {
+  color: tomato;
+}
+
+.user-componen .user-component__avatar--xl {
   width: 80px;
   height: 80px;
   border-radius: 30px;
