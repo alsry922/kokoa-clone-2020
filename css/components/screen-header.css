@@ -2,9 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 75px var(--horizontal-space) var(--horizontal-space)
-    var(--horizontal-space);
-  margin-bottom: 15px;
+  /* position: relative;
+  top: 30px; */
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding: var(--horizontal-space);
 }
 
 .screen-header__title {
@@ -13,7 +15,8 @@
 }
 
 .screen-header__icons {
-  position: relative;
+  display: flex;
+  box-sizing: border-box;
 }
 
 .screen-header__icons span {
@@ -25,7 +28,6 @@
   height: 6px;
   border-radius: 3px;
   background-color: tomato;
-  position: absolute;
-  bottom: 20px;
-  right: -5px;
+  position: relative;
+  bottom: 8px;
 }

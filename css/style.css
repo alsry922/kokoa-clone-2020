@@ -20,8 +20,9 @@ body {
   font-family: "Open Sans", sans-serif;
   height: 150vh;
   color: #2e363e;
+  z-index: 0;
 }
 
 .main-screen {
-  margin: 0px var(--horizontal-space);
+  padding: 0px var(--horizontal-space);
 }
