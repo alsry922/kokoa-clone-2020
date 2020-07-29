@@ -24,14 +24,42 @@
   border-radius: 25px;
   font-size: 14px;
   color: white;
+  margin-bottom: 25px;
 }
 
 .message-row {
   display: flex;
+  width: 100%;
 }
 
 .message-row img {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 15px;
+  margin-right: 10px;
+}
+
+.message-author {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.message-info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message-bubble {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+.message-time,
+.message-author {
+  opacity: 0.8;
+  font-size: 12px;
 }
