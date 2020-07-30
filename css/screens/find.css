@@ -89,7 +89,7 @@
   color: white;
   display: flex;
   align-items: center;
-  padding: 5px;
+  padding: 5px 10px;
   border-radius: 10px;
   position: absolute;
   bottom: 10px;
@@ -99,4 +99,24 @@
 
 .open-post__heart-count span {
   margin-left: 5px;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: none;
+    color: white;
+  }
+  50% {
+    transform: scale(2);
+    color: tomato;
+  }
+  100% {
+    transform: none;
+    color: white;
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 1s ease-in-out infinite;
 }

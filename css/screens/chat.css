@@ -1,5 +1,5 @@
 #chat-screen {
-  height: 1000vh;
+  height: 500vh;
 }
 
 #chat-screen,
@@ -18,6 +18,17 @@
   align-items: center;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .main-chat__timestamp {
   background-color: #92a4b2;
   padding: 5px 15px;
@@ -25,12 +36,24 @@
   font-size: 14px;
   color: white;
   margin-bottom: 25px;
+  animation: fadeInUp 0.5s linear;
 }
 
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 .message-row {
   display: flex;
   width: 100%;
   margin-bottom: 20px;
+  animation: fadeInLeft 0.5s linear;
 }
 
 .message-row img {
@@ -65,8 +88,20 @@
   font-size: 12px;
 }
 
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .message-row--own {
   justify-content: flex-end;
+  animation: fadeInRight 0.5s linear;
 }
 
 .message-row--own .message-info {
